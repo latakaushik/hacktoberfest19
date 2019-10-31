@@ -1,0 +1,102 @@
+#include <iostream.h>
+#include <conio.h>
+void main()
+{
+clrscr();
+int x, y, t;
+x=y=0;
+char ch1[100], ch2, ch3, ch4, ch5, ch6, ch7;
+cout<<"\t\t\t\tWELCOME"<<"\n\n\n";
+cout<<"Please enter your name"<<"\n\n";
+cin>>ch1;
+cout<<"This is a quiz game base on these topics"<<"\n";
+cout<<"\n"<<"1.Science\n"<<"2.History\n"<<"3.Sports"<<"\n\n";
+cout<<"Enter your choice (1,2,3): "<<"\n";
+cin>>t;
+cout<<"The rules are as follows:"<<"\n";
+cout<<"You have 2 questions for each category\n"<<"You answer each question in `a', `b' and `c' form\n\n\n";
+switch(t)
+{
+case 1: cout<<"Which acid is present in tomato?"<<"\naCitric acid"<<"\nbTartaric acid\ncSulphuric acid"<<"\n";
+	cin>>ch2;
+	if (ch2=='a')
+	{
+	x=x+10;
+	cout<<"You are right\nYou get 10 points\n\n";
+	}
+	else
+	{
+	cout<<"You are wrong!\n\n";
+	}
+	getch();
+	cout<<"Who invented the telescope?\n"<<"a.Einstien"<<"\nb.Gallileo"<<"\nc.Newton"<<"\n";
+	cin>>ch3;
+	if (ch3=='b')
+	{
+	x=x+10;
+	cout<<"You are right\nYou get 10 points\n\n";
+	}
+	else
+	{
+	cout<<"You are wrong!\n\n";
+	}
+	getch();
+	break;
+case 2: cout<<"When did India become Republic?\n"<<"a.15August,1947"<<"\nb.26January,1948"<<"\nc.26January,1950"<<"\n";
+	cin>>ch4;
+	if (ch4=='c')
+	{
+	x=x+10;
+	cout<<"You are right\nYou get 10 points\n\n";
+	}
+	else
+	{
+	cout<<"You are wrong!\n\n";
+	}
+	getch();
+	cout<<"Who was first PM of Independent India?\n"<<"a.Rajendra Parsad"<<"\nb.Jawaharlal Nehru"<<"\nc.Lal Bahadur Shastri"<<"\n";
+	cin>>ch5;
+	if (ch5=='b')
+	{
+	x=x+10;
+	cout<<"You are right\nYou get 10 points\n\n";
+	}
+	else
+	{
+	cout<<"You are wrong!\n\n";
+	}
+	getch();
+	break;
+case 3: cout<<"Which sport is Sania Mirza related to?\n"<<"a.Tennis"<<"\nb.Badminton"<<"\nc.Squash"<<"\n";
+	cin>>ch6;
+	if (ch6=='a')
+	{
+	x=x+10;
+	cout<<"You are right\nYou get 10 points\n\n";
+	}
+	else
+	{
+	cout<<"You are wrong!\n\n";
+	}
+	getch();
+	cout<<"Who won the first individual goldmedal for India in Olympic Games?\n"<<"a.Saina Nehwal"<<"\nb.Gagan Narang"<<"\nc.Abhinav Bindra"<<"\n";
+	cin>>ch7;
+	if (ch7=='c')
+	{
+	x=x+10;
+	cout<<"You are right\nYou get 10 points\n\n";
+	}
+	else
+	{
+	cout<<"You are wrong!\n";
+	}
+	getch();
+	break;
+}
+y=x;
+cout<<"Your score is: "<<y;
+cout<<"\n*****************************************************************************";
+cout<<"\n\t\t\t\tTHANKYOU\n";
+cout<<"*****************************************************************************";
+getch();
+}
