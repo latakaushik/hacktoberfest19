@@ -1,0 +1,6 @@
+ele = input()
+m_list = input()
+for i in range(0, len(m_list)):
+  if ele == m_list[i]:
+    print(ele+' is at '+i+' postition in the list.')
+    break
